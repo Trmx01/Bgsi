@@ -4,5 +4,4 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local window = DrRayLibrary:Load("Zizu", "Default")
 -- prima tab
 local tab1 = DrRayLibrary.newTab("Auto Bubble", "")
-tab1.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState)
-    
+tab1.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState))
