@@ -18,10 +18,13 @@ local function blowBubble()
     game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("Framework"):WaitForChild("Network"):WaitForChild("Remote"):WaitForChild("Event"):FireServer(unpack(args)) 
 end
 
--- toggle
+-- Auto Bubble
 tab1.newToggle("Auto Bubble", "Auto farm Bubble", true, function(toggleState)
     autoBubbleEnabled = toggleState
     while autoBubbleEnabled and task.wait(0.1) do
         pcall(blowBubble)
     end
 end)
+
+-- tp
+tab.newDropdown("Teleport", "Select one of these options!", {"Zen"}
