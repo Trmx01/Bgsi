@@ -20,7 +20,7 @@ local function bubble()
     local args = {
         [1] = "BlowBubble"
     }
-        game:GetService("ReplicatedStorage").Shared.Framework.Network.Remote.Event:FireServer(unpack(args)
+    game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("Framework"):WaitForChild("Network"):WaitForChild("Remote"):WaitForChild("Event"):FireServer(unpack(args)) 
 end
 --===[ HOME ]===
 local HomeTab = Window:CreateTab("HOME", 4483362458)
