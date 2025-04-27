@@ -20,14 +20,8 @@ local function bubble()
     local args = {
         [1] = "BlowBubble"
     }
-    local success, err = pcall(function()
-        game:GetService("ReplicatedStorage").Shared.Framework.Network.Remote.Event:FireServer(unpack(args))
-    end)
-    if not success then
-        warn("Errore in bubble(): " .. err)
-    end
+        game:GetService("ReplicatedStorage").Shared.Framework.Network.Remote.Event:FireServer(unpack(args)
 end
-
 --===[ HOME ]===
 local HomeTab = Window:CreateTab("HOME", 4483362458)
 HomeTab:CreateInput({
